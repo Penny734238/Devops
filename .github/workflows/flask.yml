@@ -8,9 +8,9 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v3
     - name: Run
-      run: python -m pip install –upgrade pip
+      run: | python -m pip install –upgrade pip
     - name: Run
-      run: pip3 install -r requirements.txt
+      run: | pip3 install -r requirements.txt
     - name: Run
-      run: python3 server.py > log.txt 2>&1 &
+      run: | python3 server.py > log.txt 2>&1 &
 
